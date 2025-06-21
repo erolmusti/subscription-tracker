@@ -11,6 +11,8 @@ module.exports = function (api) {
             'react-native': 'react-native-web',
             // Mock native-only modules for web compatibility
             'react-native/Libraries/Utilities/codegenNativeCommands': './mocks/empty.js',
+            // Fix Platform module resolution for web
+            'react-native/Libraries/Utilities/Platform': 'react-native-web/dist/exports/Platform',
           },
         },
       ],
