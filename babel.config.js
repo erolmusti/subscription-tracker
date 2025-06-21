@@ -13,6 +13,8 @@ module.exports = function (api) {
             'react-native/Libraries/Utilities/codegenNativeCommands': './mocks/empty.js',
             // Fix Platform module resolution for web
             'react-native/Libraries/Utilities/Platform': 'react-native-web/dist/exports/Platform',
+            // Mock React Native renderer shims for web compatibility
+            'react-native/Libraries/Renderer/shims/ReactNative': './mocks/empty.js',
           },
         },
       ],
