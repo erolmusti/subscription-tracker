@@ -12,6 +12,7 @@
     "lint": "expo lint"
   },
   "dependencies": {
+    "@expo/metro-config": "0.20.15",
     "@expo/vector-icons": "^14.1.0",
     "@react-native-async-storage/async-storage": "^2.2.0",
     "expo": "~53.0.0",
@@ -23,6 +24,8 @@
     "expo-splash-screen": "~0.30.6",
     "expo-status-bar": "~2.2.2",
     "lucide-react-native": "^0.475.0",
+    "metro": "0.80.0",
+    "metro-config": "0.80.0",
     "react": "18.2.0",
     "react-native": "0.74.4",
     "react-native-gesture-handler": "~2.24.0",
