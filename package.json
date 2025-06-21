@@ -37,12 +37,8 @@
   },
   "devDependencies": {
     "@babel/core": "7.25.2",
+    "@expo/metro-config": "latest",
     "@types/react": "18.2.79",
     "typescript": "5.8.3"
-  },
-  "overrides": {
-    "metro": "^0.82.0",
-    "metro-config": "^0.82.0",
-    "metro-resolver": "^0.82.0"
   }
 }
