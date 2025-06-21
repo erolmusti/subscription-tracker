@@ -17,8 +17,6 @@ config.resolver.assetExts.push(
 config.resolver.extraNodeModules = {
   ...config.resolver.extraNodeModules,
   'react-native-web/Libraries/Renderer/shims/ReactNative': path.resolve(__dirname, 'mocks/empty.js'),
-  // Fix Platform module resolution for internal React Native imports
-  'react-native/Libraries/Utilities/Platform': require.resolve('react-native-web/dist/exports/Platform'),
 };
 
 // Ensure react-native resolves to react-native-web for web platform
