@@ -12,6 +12,7 @@ module.exports = function (api) {
             'react-native/Libraries/Renderer/shims/ReactNative': './mocks/empty.js',
             // Fix Platform module resolution for web
             'react-native/Libraries/Utilities/Platform': 'react-native-web/dist/exports/Platform',
+            'react-native-web/Libraries/Renderer/shims/ReactNative': './mocks/empty.js',
             // Alias react-native to react-native-web for web compatibility - this must come AFTER specific aliases
             'react-native': 'react-native-web',
           },
