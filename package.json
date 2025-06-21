@@ -39,8 +39,6 @@
     "@babel/core": "7.25.2",
     "@expo/metro-config": "latest",
     "@types/react": "18.2.79",
-    "metro": "0.76.10",
-    "metro-config": "0.76.10",
     "typescript": "5.8.3"
   }
 }
