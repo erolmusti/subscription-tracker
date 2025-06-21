@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
-    "@expo/metro-config": "0.80.1",
+    "@expo/metro-config": "0.80.2",
     "@types/react": "~18.2.45",
     "babel-plugin-module-resolver": "^5.0.2",
     "eslint": "^9.29.0",
