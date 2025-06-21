@@ -3,14 +3,13 @@ module.exports = function (api) {
   return {
     presets: ['babel-preset-expo'],
     plugins: [
-      'react-native-reanimated/plugin',
       [
         'module-resolver',
         {
           alias: {
-            'react-native-pager-view': 'react-native-web/dist/exports/View',
+            // Mock native-only modules for web compatibility
+            'react-native/Libraries/Utilities/codegenNativeCommands': './mocks/empty.js',
           },
-          platforms: ['web'],
         },
       ],
     ],
