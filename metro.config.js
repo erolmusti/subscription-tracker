@@ -17,12 +17,16 @@ config.resolver.assetExts.push(
 config.resolver.extraNodeModules = {
   ...config.resolver.extraNodeModules,
   'react-native-web/Libraries/Renderer/shims/ReactNative': path.resolve(__dirname, 'mocks/empty.js'),
+  // Fix Platform module resolution for internal React Native imports
+  'react-native/Libraries/Utilities/Platform': require.resolve('react-native-web/dist/exports/Platform'),
 };
 
 // Ensure react-native resolves to react-native-web for web platform
 config.resolver.alias = {
   ...config.resolver.alias,
   'react-native$': 'react-native-web',
+  // Additional alias for Platform module to ensure consistent resolution
+  'react-native/Libraries/Utilities/Platform': 'react-native-web/dist/exports/Platform',
 };
 
 module.exports = config;
