@@ -19,4 +19,10 @@ config.resolver.extraNodeModules = {
   'react-native-web/Libraries/Renderer/shims/ReactNative': path.resolve(__dirname, 'mocks/empty.js'),
 };
 
+// Ensure react-native resolves to react-native-web for web platform
+config.resolver.alias = {
+  ...config.resolver.alias,
+  'react-native$': 'react-native-web',
+};
+
 module.exports = config;
